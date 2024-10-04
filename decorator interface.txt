@@ -1,0 +1,18 @@
++----------------+        +--------------------+       +-------------------+
+|    Component    |<-------|    Decorator       |<------| Concrete Decorator |
+| (Coffee)        |        | (Coffee Decorator)  |       | (Milk Decorator)    |
++----------------+        +--------------------+       +-------------------+
+| + cost()       |        | + cost()           |       | + cost()           |
+| + description()|        | + description()    |       | + description()    |
++----------------+        +--------------------+       +-------------------+
+        ^                             ^                            ^
+        |                             |                            |
+        |                             |                            |
+        |                             |                            |
++--------------------+       +--------------------+       +--------------------+
+|  Concrete Component |       | Concrete Decorator |       | Concrete Decorator |
+| (Simple Coffee)      |       | (Sugar Decorator)   |       | (WhipCreamDecorator)|
++--------------------+       +--------------------+       +--------------------+
+| + cost()           |       | + cost()           |       | + cost()           |
+| + description()    |       | + description()    |       | + description()    |
++--------------------+       +--------------------+       +--------------------+
